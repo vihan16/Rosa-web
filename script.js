@@ -214,6 +214,7 @@ function varDivSize(){
     gsap.to(".page5 .section",{
         // transform:"translateY(-65%)",
         // width:"70%",
+        opacity:".8",
         margin:"10vw",
         scrollTrigger:{
             trigger:".section",
@@ -221,7 +222,7 @@ function varDivSize(){
             markers:false,
             start:"top 55%",
             end:"top 12%",
-            scrub:1,
+            scrub:2,
             // pin:true
         }
     })
