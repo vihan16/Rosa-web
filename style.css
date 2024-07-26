@@ -1,0 +1,377 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: vihan;
+    src: url(graphyne-regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+    color:rgb(253, 246, 237);
+    font-family: "Figtree";
+    cursor: none;
+}
+body{
+    overflow-x: hidden;
+}
+.cursor{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: #cffc47;
+    position: absolute;
+    transition: all linear .2s;
+    mix-blend-mode: difference;
+    z-index: 8;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+    color:#ffffff;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+.nav h3{
+    font-size: 20px;
+}
+.nav h3:hover{
+    transform: scale(1.1);
+    /* font-size: 23px; */
+    
+}
+.nav i{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav i:hover{
+    color: #cffc47;
+}
+
+.full{
+    z-index: 6;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    background-color: #bababa6a;
+    top: 0;
+    right: -40%;
+    backdrop-filter: blur(15px);
+    padding: 120px 40px;
+}
+
+.full h4{
+    font-size: 120px;
+    color: #cffc47;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.full h4 span{
+    color: black;
+}
+.full i{
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    background-color: #cffc47;
+    color: black;
+    border-radius: 50%;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+}
+.home{
+    display: ruby;
+    justify-content: center;
+    
+}
+.h-top{
+    border-top: 1px solid #cffc47;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+.h-top h4{ 
+    width: 15%;
+    font-size: 15px;
+    color: #ffffffc4;
+    padding-top: 15px;
+}
+.h-top h4 span{
+    color: #cffc47;
+}
+.h-bot h2{
+    font-family: "vihan";
+    font-size: 45vw;
+    font-weight: 500;
+    line-height: .925;
+}
+
+.page2{
+    padding: 5vw 0 3vw 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.page2 h3{
+    font-size: 2.9vw;
+    font-weight: 600;
+    line-height: 4vw;
+    color: #3a3a3ad1;
+}
+.page2 .btn{
+    border: 2px solid #cffc47;
+    border-radius: 50% 0  50% 0;
+    color: rgb(217, 217, 217);
+    padding: 10px;
+    background-color: transparent;
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 2vw;
+    cursor: pointer;
+}
+.page3{
+    height: 40vh;
+    width: 100%;
+}
+.page3 svg{
+    /* background-color: brown; */
+    margin-top: -100px;
+}
+
+.motion{
+    display: flex;
+    align-items: center; 
+    background-color: #cffc47;  
+    padding: 1vw 0;
+    
+}
+
+.marque{
+    display: flex;
+    gap: 2vw;
+    /* justify-content: space-around; */
+    /* flex-direction: row; */
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 1.5vw;
+    transform: translateX(-100%);
+}
+.marque h3{ 
+    font-size: 2.4svw;
+}
+.marque img{
+    height: 2vw;
+}
+.page4{
+    height: 200vh;
+    width: 100%;
+    padding: 0 4vw 4vw 4vw;
+    
+}
+.page4 .multi-div{
+    display: flex;
+    gap: 10vw;
+    position: absolute;
+    /* transform: translate(-65%); */
+}
+
+.page4 .multi-div .box1{
+    height: 34vw;
+    width: 54vw;
+    background-image: url(https://federicorosa.design/wp-content/uploads/2024/07/studiokubo-lap-scaled.webp);
+    border-radius: 1.7vw;
+    background-size: cover;
+    object-fit: cover;
+    transition: .3s ; 
+    cursor: pointer;
+}
+/* .page4 .multi-div .box1:hover{
+    opacity: .7;
+} */
+.page4 .multi-div .box1 h3{
+    position: relative;
+    top: 88%;
+    left: 3%;
+    height: 2.8vw;
+    width: 9vw;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cffc47;
+    color: black;
+}
+.page4 .multi-div .box1 h3:hover{
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: #cffc47;
+}
+.page4 .multi-div .box2{
+    height: 34vw;
+    width: 54vw;
+    background-image: url(https://federicorosa.design/wp-content/uploads/2024/07/pandemedia-intro-scaled.webp);
+    border-radius: 1.7vw;
+    background-size: cover;
+    object-fit: cover;
+    transition: .2s ;
+    cursor: pointer;
+}
+/* .page4 .multi-div .box2:hover{
+    opacity: .9;
+} */
+.page4 .multi-div .box2 h3{
+    position: relative;
+    top: 88%;
+    left: 3%;
+    height: 2.8vw;
+    width: 9vw;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cffc47;
+    color: black;
+}
+.page4 .multi-div .box2 h3:hover{
+    background-color: transparent;
+    border: 1.5px solid black;
+    color: #cffc47;
+}
+.page4 .multi-div .box3{
+    height: 34vw;
+    width: 54vw;
+    background-image: url(https://federicorosa.design/wp-content/uploads/2024/07/tedxcolle-mobile-scaled.webp);
+    border-radius: 1.7vw;
+    background-size: cover;
+    object-fit: cover;
+    transition: .3s ;
+    cursor: pointer;
+}
+.page4 .multi-div .box3 h3{
+    position: relative;
+    top: 88%;
+    left: 3%;
+    height: 2.8vw;
+    width: 9vw;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cffc47;
+    color: black;
+}
+.page4 .multi-div .box3 h3:hover{
+    background-color: transparent;
+    border: 1.5px solid rgb(255, 255, 255);
+    color: #cffc47;
+}
+.page4 .multi-div .box4{
+    height: 34vw;
+    width: 54vw;
+    background-image: url(https://federicorosa.design/wp-content/uploads/2024/07/motion-colibrivision.webp);
+    border-radius: 1.7vw;
+    background-size: cover;
+    object-fit: cover;
+    transition: .3s ;
+    cursor: pointer;
+}
+.page4 .multi-div .box4 h3{
+    position: relative;
+    top: 88%;
+    left: 3%;
+    height: 2.8vw;
+    width: 9vw;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cffc47;
+    color: black;
+}
+.page4 .multi-div .box4 h3:hover{
+    background-color: transparent;
+    border: 1.5px solid black;
+    color: #cffc47;
+}
+.page5{
+    height: 90vh;
+    width: 100%;
+    
+}
+.page5 .section{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 65%;
+    margin: 1vw;
+    text-align: center;
+    padding: 2vw;
+    border-radius: 45px;
+    background-color: #ffffff;
+}
+.page5 .section h2{
+    /* text-align: center; */
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: black;
+    background-color: #cffc47;
+    border-radius: 35px;
+    padding: .8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 10vw; */
+}
+.page5 .section h1{
+    padding: 4vw 4vw 0 4vw;
+    font-size: 7vw;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+.page5 .section h1:hover{
+    color: #cffc47;
+    transition: ease .5s;
+    cursor: pointer;
+    
+}
